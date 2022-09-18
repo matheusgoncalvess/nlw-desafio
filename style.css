@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --font-family: 'Montserrat', sans-serif;
+    --fs-title: 2.4rem;
+    --fcolor-title: #FFFFFF;
+    --fs-text: 1.6rem;
+    --fcolor-text: #C1C1C1;
+}
+
+body {
+    background-image: url(./imagens/Fundo.jpg);
+    background-position: top center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #121214;
+
+    font-family: var(--font-family);
+    padding-bottom: 63px;
+}
+
+header {
+    padding: 32px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-image: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%), linear-gradient(0deg, #262629, #262629);
+    padding: 4px;
+    border-radius: 50%;
+
+    transition: transform .6s;
+}
+
+header img:hover {
+    transform: scale(1.1);
+}
+
+main {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 24px;
+    max-width: 520px;
+    max-height: 812px;
+    width: 90%;
+}   
+
+section {
+    background-image: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%), linear-gradient(0deg, #262629, #262629);
+    padding-top: 4px;
+    border-radius: 12px;
+
+    width: 520px;
+    height: auto;
+}
+
+section div {
+    background-color: #262629;
+    border-radius: 6px;
+    width: 520px;
+    height: auto;
+    padding: 24px 32px 32px 32px;
+    gap: 24px;
+}
+
+section h2 {
+    font-weight: 900;
+    font-size: var(--fs-title);
+    color: var(--fcolor-title);
+    margin-bottom: 12px;
+}
+
+section p {
+    font-weight: 400;
+    font-size: var(--fs-text);
+    color: var(--fcolor-title);
+    letter-spacing: -0.18px;
+}
+
+section ul {
+   margin-top: 24px;
+   display: flex;   
+   flex-wrap: wrap;
+   gap: 16px;
+}
+
+section ul li {
+    list-style: none;
+    transition: transform .3s;
+}
+
+section ul li:hover {
+    transform: scale(1.1);
+}
+
+.my-films {
+    border-radius: 8px;
+    width: 100px;
+    height: 150px;
+}
+
+.redes {
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+
+header img {
+    animation: waterfall .5s .3s backwards; 
+}
+
+@keyframes waterfall {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main section {
+    animation: fire .8s .5s backwards;
+}
+
+main section:nth-child(1) {
+    animation-delay: .3s;
+}
+main section:nth-child(2) {
+    animation-delay: .6s;
+}
+main section:nth-child(3) {
+    animation-delay: .9s;
+}
+
+@keyframes fire {
+
+    0% {
+        opacity: 0;
+        transform: translatex(-30px);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translatex(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
