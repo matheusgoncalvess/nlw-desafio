@@ -1,18 +1,19 @@
-# NLW eSports
+# NLW Desafio - Explorer
 
-![preview](./.github/preview.png)
+![preview](images/preview.png)
 
 > Trilha Explorer
 
-Projeto construído do evento Next Level Week da Rocketseat.
+Desafio proposto pela Rocketseat durante o Evento do Next Level Week.
 
-[🔗 Clique aqui para acessar](https://matheusgoncalvess.github.io/nlw-esports-explorer)
+[🔗 Clique aqui para acessar](https://matheusgoncalvess.github.io/nlw-desafio/)
 
 
 ## 🛠️ Tecnologias
 
 - HTML
 - CSS
+- Figma
 - Git e Github
 
 ## 💜 Contato
